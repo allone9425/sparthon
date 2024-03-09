@@ -1,0 +1,158 @@
+html {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.bucket {
+  background-size: cover;
+  background-position: center;
+  margin: 8px;
+  position: relative;
+  transition: 0.5;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  word-break: keep-all;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.done::after {
+  content: "";
+  width: 107px;
+  height: 70px;
+  background-image: url("./Done.png");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 25%;
+}
+
+.wrap {
+  flex-wrap: wrap;
+  width: 600px;
+}
+
+.msg {
+  margin: -10px 0 30px;
+  color: black;
+}
+.bg {
+  background-image: url("./sakura_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-color: #141617;
+}
+
+.title {
+  color: #e8344e;
+}
+
+.msg {
+  color: white;
+  margin-bottom: 48px;
+}
+
+.bucket {
+  width: 160px;
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+}
+
+.img1 {
+  background-image: url("./Bucket01.png");
+  color: white;
+}
+
+.img2 {
+  background-image: url("./Bucket02.png");
+  color: #e8344e;
+}
+
+.img3 {
+  background-image: url("./Bucket03.png");
+  color: #e8344e;
+}
+
+.img4 {
+  background-image: url("./Bucket04.png");
+  color: white;
+}
+
+.img5 {
+  background-image: url("./Bucket05.png");
+  color: white;
+}
+
+.img6 {
+  background-image: url("./Bucket06.png");
+  color: #e8344e;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+body {
+  height: 100vh;
+}
+
+@keyframes scale-out {
+  0% {
+    transform: scale(1.4);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.bgm {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.bucket_plus {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  input {
+    padding: 10px;
+    border-radius: 10px;
+  }
+}
+
+.bucket button {
+  z-index: 999;
+  position: absolute;
+  right: 20px;
+  top: 25px;
+}
+
+.bucket:hover {
+  transform: scale(1.1);
+}
